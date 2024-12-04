@@ -87,6 +87,39 @@ footer .container>.row{
 .featuredGallery .container>.row{
   row-gap: 24px;
 }
+.footer .container>.row {
+  row-gap: 40px;
+}
+
+.imagePart{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: static;
+  height: unset;
+  overflow: hidden;
+}
+.imagePart img{
+  width: 100%;
+  height: auto;
+}
+.aboutPart {
+  padding: 40px;
+  box-shadow: none;
+  margin-right: 0;
+  z-index: 5;
+}
+
+.ActionCard .row{
+  flex-direction: column;
+  row-gap: 20px;
+}
+.ActionCard .row .col{
+  width: 100%;
+  text-align: center;
+}
+.aboutMeSection {
+  margin-bottom: 80px;
+}
 
  }
 
@@ -97,15 +130,8 @@ footer .container>.row{
   footer .fourthH {
     text-align: center;
   }
-  footer ul a {
-    display: table;
-    margin: auto;
-    max-width: 298PX;
-    text-align: center;
-  }
-  footer .container>.row{
-    gap: 60px 40px;
-  } 
+
+  
   .footerLinks {
     width: 100%;
   }
@@ -144,34 +170,49 @@ footer .container>.row{
 .CustomersReviews .col{
   max-width: 100%;
 }
+.formSection{
+  padding: 80px 30px 80px 30px;
+}
+.footer.defaultPadding{
+  padding: 34px 0;
+}
+.footer .secH{
+  text-align: center;
+  margin-bottom: 24px;
+}
+.footer .container>.row{
+  justify-content: center;
+  row-gap: 40px;
+}
+footer ul a {
+  display: table;
+  margin: auto;
+  max-width: 298PX;
+  text-align: center;
+}
+
+.footer .social-icons{
+justify-content: center;
+}
+.footer .exploreLinks ul li{
+text-align: left;
+}
 
  }
 
 @media (max-width: 575.98px) {
-  footer {
-    text-align: center;
-  }
-  footer .col-lg-4 a {
+  .footer-brand{
+    display: table !important;
     margin: auto;
   }
-  footer .col-lg-4>a {
+  .footer {
+    text-align:center;
+  }
+ 
+  .footer ul:not(.footer .locationSection ul) {
+    max-width: 218px;
     margin: auto;
-    margin-bottom: 16px;
   }
-  footer .navbar-brand {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  footer .fIcons {
-    justify-content: center;
-  }
-  footer .row {
-    row-gap: 40px;
-  }
-
-  footer .form-check .form-check-input {
-    float: none;
-}
 
 .reedesignWrap{
   padding: 20px;
@@ -208,6 +249,27 @@ background-size: cover, cover;
 .reedesignWrap .slider{
   margin-bottom: 0;
 }
+.formSection{
+  padding: 80px 20px 80px 20px;
+}
+.formWrapCulumn{
+  padding: 50px 40px;
+}
+
+.ActionCard .row .secH{
+font-size: 20px;
+}
+.ActionCard {
+  padding: 30px;
+  max-width: 90%;
+}
+.aboutMeSection {
+  margin-bottom: 40px;
+}
+.footer.aboutPage0 {
+  padding-top: 100px;
+}
+
 
  }
 

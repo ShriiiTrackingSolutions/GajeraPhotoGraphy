@@ -50,10 +50,10 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="aboutMe.html">About Me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -65,7 +65,7 @@
                 <a class="nav-link" href="#">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contactMe.html">Contact</a>
               </li>
             </ul>
             <div>
@@ -436,7 +436,60 @@
   </section>
   <!-- Customers Reviews section End -->
 
-
+<!-- form section start -->
+<section class="formSection">
+<div class="container-fluid">
+  <div class="row justify-content-end">
+    <div class="col-md-6 formWrapCulumn">
+      <form class="row g-md-4 gy-4 gx-0 needs-validation " novalidate>
+        <div class="col-xl-6">
+          <label for="validationCustom01" class="form-label">First name *</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+          <div class="invalid-feedback">
+            This field is required.
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <label for="validationCustom02" class="form-label">Last name *</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+          <div class="invalid-feedback">
+            This field is required.
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <label for="validationCustomUsername" class="form-label">Email Address *</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Email Address" required>
+            <div class="invalid-feedback">
+              Please enter your Email.
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <label for="validationCustom03" class="form-label">Phone No *</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="Phone No" required>
+          <div class="invalid-feedback">
+            Please enter your Phone No.
+          </div>
+        </div>
+  
+        <div class="mb-3 col-12">
+          <label for="validationTextarea" class="form-label">I would like to discuss *</label>
+          <textarea class="form-control"  cols="40" rows="4"  id="validationTextarea" placeholder="Your message" aria-placeholder="Your message" required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message in the textarea.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn submit-btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+ 
+</div>
+</section>
+<!-- form section end -->
 
 
 
@@ -500,83 +553,107 @@
     </div>
 
     <!-- footer section start  -->
-    <footer class="defaultPadding">
+  
+    <!-- Footer Section -->
+    <footer class="footer ">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6">
-            <a class="navbar-brand" href="index.html"
-              ><img
-                src="image/ShriiTrackingSolutionLogoWhite.png"
-                alt="asha industries logo"
-            /></a>
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+            <a class="footer-brand" href="index.html">
+              <img
+                src="image/new-logo-white.png"
+                alt=" logo"
+              />
+            </a>
             <p>
-              We are a team of professionals working in this industry for 15
-              years. We have so several satisfied clients from all over India.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt rem quam sit recusandae hic? Eaque necessitatibus minima eos natus quod!
             </p>
-            <div class="fIcons">
-              <a
-                target="_blank"
-                class="fa-brands fa-facebook-f"
-                href="https://www.facebook.com/"
-                aria-hidden="true"
-              ></a>
-              <a
-                target="_blank"
-                class="fa-brands fa-x-twitter"
-                href="https://x.com/?lang=en"
-                aria-hidden="true"
-              ></a>
-              <a
-                target="_blank"
-                class="fa-brands fa-instagram"
-                href="https://www.instagram.com/"
-                aria-hidden="true"
-              ></a>
-              <a
-                target="_blank"
-                class="fa-brands fa-linkedin-in"
-                href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQH3HyOeX_gCXgAAAZJbhlgANMabyJfAewxAY9qdxU6QsJHvozrFZ51a8_tYQyBRvuwnA3uVR8G7943UdA0TlnFJzLvY9FQFuffSjfYFTIwQ_DjL6JSlBWNnWNmu50MKpPpSrNY=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvimal-gupta-2458b0260"
-                aria-hidden="true"
-              ></a>
-            </div>
           </div>
-          <div class="col-lg-4 col-md-6 footerLinks">
-            <h2 class="fourthH">Locate Us</h2>
+
+          <!-- Explore Links -->
+          <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
+            <h5 class="secH">Quick links</h5>
             <ul>
               <li>
-                <a target="_blank" href="tel:+91 6354710794"
-                  ><i class="fa-solid fa-phone"></i> +91 63547 10794</a
+                <a href="index.html">About Me</a>
+              </li>
+              <li>
+                <a href="about.html">Pricing</a>
+              </li>
+              <li>
+                <a href="contactUs.html"
+                  >All Galleries</a
                 >
               </li>
               <li>
-                <a target="_blank" href="tel:+91 7990909711"
-                  ><i class="fa-solid fa-phone"></i> +91 79909 09711</a
+                <a href="termiteTreatment.html"
+                  >Protected Gallery</a
                 >
               </li>
               <li>
-                <a
-                  target="_blank"
-                  href="mailto:contact@shriiitrackingsolutions.com"
-                  ><i class="fa-solid fa-envelope"></i>
-                  contact@shriiitrackingsolutions.com</a
+                <a href="contactMe.html"
+                  >Contact Us</a
+                >
+              </li>
+          
+              
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
+            <h5 class="secH">Photoshoots</h5>
+            <ul>
+              <li>
+                <a href="rodentTreatment.html">Engagement</a>
+              </li>
+              <li>
+                <a href="woodBorerTreatment.html">Pre-Wedding</a>
+              </li>
+              <li>
+                <a href="bedbugTreatment.html"
+                  >Wedding</a
                 >
               </li>
               <li>
-                <a
-                  target="_blank"
-                  href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8"
-                  ><address>
-                    <i class="fa-solid fa-location-dot"></i> TF-A1-22, Akshar
-                    Pavilion Mall, Near Priya Cinema,Vasna Bhyali Main Road,
-                    Vadodara,391410
+                <a href="birdControlTreatment.html"
+                  >Maternity</a
+                >
+              </li>
+              <li>
+                <a href="mosquitoTreatment.html">Baby Shower</a>
+              </li>
+             
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-3 col-sm-6 locationSection">
+            <h5 class="secH">Locate Us</h5>
+            <ul>
+              <li>
+                <a target="_blank" href="tel:+91 6354710794"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 63547 10794</a>
+              </li>
+              <li>
+                <a target="_blank" href="tel:+91 7990909711"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 79909 09711</a>
+              </li>
+              <li>
+                <a target="_blank" href="mailto:contact@shriiitrackingsolutions.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  contact@shriiitrackingsolutions.com</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8"><address>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>TF-A1-22, Akshar Pavilion Mall, Near Priya Cinema,Vasna Bhyali Main Road, Vadodara,391410
                   </address>
                 </a>
               </li>
             </ul>
+          
           </div>
         </div>
       </div>
     </footer>
+
     <section class="copyrightSection">
       <div class="container">
         <p>Copyright @2024 All Rights Reserved By Shriii Tracking Solution.</p>
@@ -715,29 +792,25 @@
     </script>
 
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (() => {
-        "use strict";
+   // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".needs-validation");
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
 
-        // Loop over them and prevent submission
-        Array.from(forms).forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
 
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
+      form.classList.add('was-validated')
+    }, false)
+  })
+})();
     </script>
   </body>
 </html>
