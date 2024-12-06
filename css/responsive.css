@@ -61,7 +61,10 @@
     .galleryCategories {
       margin-bottom: 120px;
     }
-
+    .introText {
+      margin: 0px 0px 0px -100px;
+      padding: 50px 60px 45px 60px;
+    }
  }
 
 @media (max-width: 991.98px) { 
@@ -130,6 +133,26 @@ footer .container>.row{
 }
 .galleryCategories {
   margin-bottom: 160px;
+}
+.introText {
+  margin: 0px 0px 0px  0px;
+  padding: 24px;
+  background-color: #FDFDFD;
+  box-shadow: 0px 0px 87px 0px rgba(0, 0, 0, 0.1);
+}
+.PackageDetails {
+  padding: 50px;
+}
+.imgMargin {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  aspect-ratio: 12 / 18;
+  margin: 0px 0 30px;
+}
+.packagesRow{
+  flex-direction: column-reverse;
 }
  }
 

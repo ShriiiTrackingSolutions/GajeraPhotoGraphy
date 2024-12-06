@@ -1321,134 +1321,241 @@ padding: 180px 0 130px;
 /* Gallery Categories Section end */
 
 
+/**************************
+***Gallery category Page***  
+***************************/
+
 /* gallery categories  */
 
-.MansonryGallery {
-  column-width: 400px;
-  column-gap: 24px;
-  padding: 5px;
-}
-
-.MansonryGallery img {
-  width: 100%;
-  cursor: pointer;
-  margin-bottom: 24px;
-}
-
- .lightbox {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1060;
-  display: none;
-  background: #7f8c8d;
-  perspective: 1000px;
-}
-
- .filter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  filter: blur(20px);
-  opacity: 0.5;
-  background-position: center;
-  background-size: cover;
-}
-
- .lightbox img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1066;
-  transform: translate(-50%, -50%) rotateY(0deg);
-  max-height: 95vh;
-  width: auto;
-  max-width: calc(95vw - 100px);
+.grid-item {
+  float: left;
+  width: 400px;
+  aspect-ratio: 24/16;
   object-fit: cover;
-  transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
-  transform-style: preserve-3d;
+  padding: 12px;
+}
+
+.grid-item--height2 {
+   aspect-ratio: 12/18;
+   object-fit: cover;
+   }
+
+   
+/***************
+***Video Page***  
+****************/
+
+/* Cinematic Teaser Videos Section start */
+.galleryCategories.videoPage0 .container>.row{
+row-gap: 30px;
+}
+.videoRow{
+  margin-top: 70px;
+}
+.bottomStyle span{
+  padding-bottom: 20px;
+  position: relative;
+}
+.bottomStyle span::before{
+  position: absolute;
+  content: "\f03d";
+  font-weight: 900;
+  font-size: 16px;
+  background-color: #ffffff;
+  bottom: 0;
+  padding: 0 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Font Awesome 6 Free";
+  color: var(--darkGrey);
+}
+.bottomStyle span::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  bottom: 8px;
+  display: block;
+  z-index: -1;
+  content: "";
+  border-bottom: 0;
+  border-top: 1px solid #000000;
+}
+.VideoParrent{
+  border-radius: 8px;
+  overflow: hidden;
+}
+.VideoParrent iframe{
+  aspect-ratio: 16/9;
+  margin-bottom: -8.5px;
+}
+
+/* Cinematic Teaser Videos Section end */
+
+
+   
+/**********************
+***Pricing List Page***  
+***********************/
+
+
+.introText {
+  margin: 0px 0px 0px -150px;
+  padding: 75px 80px 65px 80px;
+  background-color: #FDFDFD;
+  box-shadow: 0px 0px 87px 0px rgba(0, 0, 0, 0.1);
+}
+.contactForward {
+  gap: 24px 24px;
+  margin-top: 50px;
+}
+.contactForward .secH{
+  margin-bottom: 0;
+}
+
+.newBtn{
+  display: inline-block;
+  font-family: "Roboto Slab", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FCFCFC;
+  background-color: #000000;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 30px;
+  transition: all 0.3s ease 0s;
+}
+.newBtn i{
+  margin-right: 10px;
+}
+
+.newBtn:hover{
+  color: #000000;
+  background-color: var(--lightGrey);
+  -webkit-animation: shake-horizontal 1s ease-in-out both;
+  animation: shake-horizontal 1s ease-in-out both;
+}
+
+@-webkit-keyframes shake-horizontal {
+  16.65% {
+    transform: translateX(8px)
+}
+
+33.3% {
+    transform: translateX(-6px)
+}
+
+49.95% {
+    transform: translateX(4px)
+}
+
+66.6% {
+    transform: translateX(-2px)
+}
+
+83.25% {
+    transform: translateX(1px)
+}
+
+100% {
+    transform: translateX(0)
+}
+
+}
+
+/* section Separator  start*/
+
+.sectionSeparator .secH{
+text-align: center;
+margin-top: 30px;
+color: #ffffff;
+}
+.Separator1{
+  background: linear-gradient(#00000098, #00000098), url("../image/PricingPics/pricing2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center;
+}
+
+/* section Separator end */
+
+
+/* Packages Section start */
+.PackageDetails{
+  background-color: #FAFAFA;
+  padding: 85px 220px 50px 85px;
+}
+
+.packagesSection .col-lg-3{
+  display: flex;
+  align-items: center;
+}
+
+.packagesSection .fourthH{
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.PackageDetailsList{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.PackageDetailsList:not(.PackageDetailsList:last-child){
+  margin-bottom: 34px;
 }
 
 
-/*.lightbox:hover img{
-  transform: translate(-50%, -50%) rotateY(180deg);
-}*/
-
- [class^="arrow"] {
-  height: 200px;
-  width: 50px;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+.PackageDetailsList li{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.PackageDetailsList li i{
+  margin-right: 8px;
+  margin-top: 7px;
 }
 
- [class^="arrow"]:after {
-  content: '';
+
+.imgMargin{
+  max-width: 420px;
+  overflow: hidden;
+  aspect-ratio: 12/18;
+  margin: 0 0 0 -200px;
+}
+
+.imgMargin img{
+  aspect-ratio: 12/18;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.divider-separator{
+  position: relative;
+  margin: 30px auto;
+  height: 1px;
+  background-color: var(--darkGrey);
+}
+
+.divider-separator::after{
   position: absolute;
+  background-color: #ffffff;
+  padding: 0 10px;
+  content: "\f083";
+  font-weight: 900;
+  font-size: 22px;
+  font-family: "Font Awesome 6 Free";
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 15px;
-  height: 15px;
+  transform: translate(-50%,-50%);
 }
 
- .arrowr {
-  right: 0;
-}
 
-.arrowr:after {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-}
 
-.arrowl {
-  left: 0;
-}
 
-.arrowl:after {
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-}
 
- .close {
-  position: absolute;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  margin: 20px;
-  cursor: pointer;
-}
 
-.close:after,
-.close:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 60%;
-  background: #e74c3c;
-}
 
-.close:after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
+/* Packages Section end */
 
-.close:before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.title {
-  font-size: 20px;
-  color: #000;
-  z-index: 1066;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
