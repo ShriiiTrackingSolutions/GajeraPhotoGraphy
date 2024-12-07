@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/spotlight.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -93,45 +94,64 @@
 
         <div class="grid MansonryGallery">
           <div class="grid-item">
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_3826.jpg">
             <img src="image/Gallery/Engagement/IMG_3826.jpg"   alt="Engagement pic"  />
+          </a>
           </div>
 
           <div class="grid-item grid-item--height2">
-            <img src="image/Gallery/Engagement/IMG_7245.jpg"  alt="Engagement pic" />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7245.jpg"><img src="image/Gallery/Engagement/IMG_7245.jpg"  alt="Engagement pic" /></a>
           </div>
           <div class="grid-item grid-item--height2">
-            <img src="image/Gallery/Engagement/IMG_7246.jpg"  alt="Engagement pic" />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7246.jpg">
+              <img src="image/Gallery/Engagement/IMG_7246.jpg"  alt="Engagement pic" />
+            </a>
+            
           </div>
           <div class="grid-item grid-item--height2">
-            <img src="image/Gallery/Engagement/IMG_7252.jpg"  alt="Engagement pic" />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7252.jpg">
+              <img src="image/Gallery/Engagement/IMG_7252.jpg"  alt="Engagement pic" />
+            </a>   
           </div>
           <div class="grid-item">
-            <img src="image/Gallery/Engagement/IMG_7259.jpg"   alt="Engagement pic"  />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7259.jpg">
+              <img src="image/Gallery/Engagement/IMG_7259.jpg"   alt="Engagement pic"  />
+            </a>
+        
           </div>
 
           <div class="grid-item">
-            <img src="image/Gallery/Engagement/IMG_7254.jpg"   alt="Engagement pic"  />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7254.jpg">
+              <img src="image/Gallery/Engagement/IMG_7254.jpg"   alt="Engagement pic"  />
+            </a>
+            
           </div>
           <div class="grid-item grid-item--height2">
-            <img src="image/Gallery/Engagement/IMG_7263.jpg"  alt="Engagement pic" />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7263.jpg">
+              <img src="image/Gallery/Engagement/IMG_7263.jpg"  alt="Engagement pic" />
+            </a>
           </div>
           
           <div class="grid-item">
-            <img src="image/Gallery/Engagement/IMG_7267.jpg"   alt="Engagement pic"  />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7267.jpg">
+              <img src="image/Gallery/Engagement/IMG_7267.jpg"   alt="Engagement pic"  />
+            </a>
+           
           </div>
           
           <div class="grid-item grid-item--height2">
-            <img src="image/Gallery/Engagement/IMG_7265.jpg"  alt="Engagement pic" />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7265.jpg">
+              <img src="image/Gallery/Engagement/IMG_7265.jpg"  alt="Engagement pic" />
+            </a>
+            
           </div>
           
           <div class="grid-item">
-            <img src="image/Gallery/Engagement/IMG_7271.jpg"   alt="Engagement pic"  />
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7271.jpg">
+              <img src="image/Gallery/Engagement/IMG_7271.jpg"   alt="Engagement pic"  />
+            </a>
+           
           </div>
-
-
-
-
-
 
         </div>
     
@@ -324,7 +344,52 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/spotlight.bundle.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+      Spotlight.show(myGallery,{
+  // "fade", "slide", "scale", and "rotate"
+  animation: "slide",
+  /* shows/hides controls
+    "theme",
+    "fullscreen",
+    "autofit",
+    "zoom-in",
+    "zoom-out",
+    "page",
+    "title",
+    "description",
+    "player"
+  */
+  control: ["autofit", "zoom","player","fullscreen", "zoom-in","zoom-out"],
+  // auto hides the controls
+  autohide: true,
+  // shows fullscreen toggle button
+  fullscreen: true,
+  // shows zoom buttons
+  zoom: true,
+  // shows zoomIn button
+  zoomin: true,
+  // shows zoomOut button
+  zoomout: true,
+  // shows reset button
+  reset: true,
+  // shows autoplay button
+  player: true,
+  // infinite mode
+  infinite: true,
+  // "white" or "dark"
+  theme: "dark",
+  // shows pages
+  page: true,
+  // shows image preloader
+  preloader: true,
+  // enables image prefetching
+  prefetch: true
+});
+    </script>
+
 
     <script>
       //  Header script
@@ -365,6 +430,7 @@
         }
       });
     </script>
+
     <script>
       var elem = document.querySelector(".grid");
       var msnry = new Masonry(elem, {

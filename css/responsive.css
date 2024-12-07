@@ -65,6 +65,12 @@
       margin: 0px 0px 0px -100px;
       padding: 50px 60px 45px 60px;
     }
+    .pricingCardsSection {
+      margin-top: -178px;
+  }
+  .Separator2 {
+    padding-bottom: 162px;
+  }
  }
 
 @media (max-width: 991.98px) { 
@@ -154,6 +160,18 @@ footer .container>.row{
 .packagesRow{
   flex-direction: column-reverse;
 }
+.packageDesc {
+  padding: 45px 24px 24px;
+}
+
+.tagBrick {
+  text-wrap: initial;
+  width: 84%;
+  text-align: center;
+}
+
+
+
  }
 
  @media screen and (max-width: 912px) {
@@ -242,6 +260,22 @@ text-align: left;
   .styledHeading.secH.C_head span {
     padding: 5px;
 }
+
+.tagBrick {
+  width: auto;
+}
+.Separator2 {
+  padding-bottom: 162px;
+}
+
+.Separator2 {
+  background: linear-gradient(#00000098, #00000098),
+  url("../image/PricingPics/pricing2 (1).jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover ;
+  background-position: center, -300px;
+}
+
  }
 
 @media (max-width: 575.98px) {
@@ -334,5 +368,8 @@ font-size: 20px;
   .GetInTouch {
     padding: 12px;
     margin-bottom: 100px;
+  }
+  .tagBrick {
+    width: 74%;
   }
 }
