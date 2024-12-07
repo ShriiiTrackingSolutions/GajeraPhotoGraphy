@@ -1326,12 +1326,19 @@ header {
 
 /* gallery categories  */
 
+
 .grid-item {
-  float: left;
-  width: 400px;
-  aspect-ratio: 24/16;
-  object-fit: cover;
-  padding: 12px;
+   aspect-ratio: 24/16;
+   object-fit: cover;
+   margin-bottom: 24px;
+  }
+
+  .grid-sizer,.grid-item{
+    width: calc(33.333333% - 24px);                                                                              ;
+  }
+
+.gutter-sizer { 
+  width: 24px;
 }
 
 .grid-item--height2 {

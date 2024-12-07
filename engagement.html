@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/spotlight.css">
+    <link rel="stylesheet" href="css/spotlight.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -91,70 +91,94 @@
 
     <section class="galleryCategories defaultPadding">
       <div class="container">
-
         <div class="grid MansonryGallery">
+          <div class="gutter-sizer"></div>
+          <div class="grid-sizer"></div>
           <div class="grid-item">
             <a class="spotlight" href="image/Gallery/Engagement/IMG_3826.jpg">
-            <img src="image/Gallery/Engagement/IMG_3826.jpg"   alt="Engagement pic"  />
-          </a>
+              <img
+                src="image/Gallery/Engagement/IMG_3826.jpg"
+                alt="Engagement pic"
+              />
+            </a>
           </div>
 
           <div class="grid-item grid-item--height2">
-            <a class="spotlight" href="image/Gallery/Engagement/IMG_7245.jpg"><img src="image/Gallery/Engagement/IMG_7245.jpg"  alt="Engagement pic" /></a>
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7245.jpg"
+              ><img
+                src="image/Gallery/Engagement/IMG_7245.jpg"
+                alt="Engagement pic"
+            /></a>
           </div>
           <div class="grid-item grid-item--height2">
             <a class="spotlight" href="image/Gallery/Engagement/IMG_7246.jpg">
-              <img src="image/Gallery/Engagement/IMG_7246.jpg"  alt="Engagement pic" />
+              <img
+                src="image/Gallery/Engagement/IMG_7246.jpg"
+                alt="Engagement pic"
+              />
             </a>
-            
           </div>
           <div class="grid-item grid-item--height2">
             <a class="spotlight" href="image/Gallery/Engagement/IMG_7252.jpg">
-              <img src="image/Gallery/Engagement/IMG_7252.jpg"  alt="Engagement pic" />
-            </a>   
+              <img
+                src="image/Gallery/Engagement/IMG_7252.jpg"
+                alt="Engagement pic"
+              />
+            </a>
           </div>
           <div class="grid-item">
             <a class="spotlight" href="image/Gallery/Engagement/IMG_7259.jpg">
-              <img src="image/Gallery/Engagement/IMG_7259.jpg"   alt="Engagement pic"  />
+              <img
+                src="image/Gallery/Engagement/IMG_7259.jpg"
+                alt="Engagement pic"
+              />
             </a>
-        
           </div>
 
           <div class="grid-item">
             <a class="spotlight" href="image/Gallery/Engagement/IMG_7254.jpg">
-              <img src="image/Gallery/Engagement/IMG_7254.jpg"   alt="Engagement pic"  />
+              <img
+                src="image/Gallery/Engagement/IMG_7254.jpg"
+                alt="Engagement pic"
+              />
             </a>
-            
           </div>
           <div class="grid-item grid-item--height2">
             <a class="spotlight" href="image/Gallery/Engagement/IMG_7263.jpg">
-              <img src="image/Gallery/Engagement/IMG_7263.jpg"  alt="Engagement pic" />
+              <img
+                src="image/Gallery/Engagement/IMG_7263.jpg"
+                alt="Engagement pic"
+              />
             </a>
-          </div>
-          
-          <div class="grid-item">
-            <a class="spotlight" href="image/Gallery/Engagement/IMG_7267.jpg">
-              <img src="image/Gallery/Engagement/IMG_7267.jpg"   alt="Engagement pic"  />
-            </a>
-           
-          </div>
-          
-          <div class="grid-item grid-item--height2">
-            <a class="spotlight" href="image/Gallery/Engagement/IMG_7265.jpg">
-              <img src="image/Gallery/Engagement/IMG_7265.jpg"  alt="Engagement pic" />
-            </a>
-            
-          </div>
-          
-          <div class="grid-item">
-            <a class="spotlight" href="image/Gallery/Engagement/IMG_7271.jpg">
-              <img src="image/Gallery/Engagement/IMG_7271.jpg"   alt="Engagement pic"  />
-            </a>
-           
           </div>
 
+          <div class="grid-item">
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7267.jpg">
+              <img
+                src="image/Gallery/Engagement/IMG_7267.jpg"
+                alt="Engagement pic"
+              />
+            </a>
+          </div>
+
+          <div class="grid-item grid-item--height2">
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7265.jpg">
+              <img
+                src="image/Gallery/Engagement/IMG_7265.jpg"
+                alt="Engagement pic"
+              />
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="spotlight" href="image/Gallery/Engagement/IMG_7271.jpg">
+              <img
+                src="image/Gallery/Engagement/IMG_7271.jpg"
+                alt="Engagement pic"
+              />
+            </a>
+          </div>
         </div>
-    
       </div>
     </section>
 
@@ -348,10 +372,10 @@
     <script src="js/script.js"></script>
 
     <script>
-      Spotlight.show(myGallery,{
-  // "fade", "slide", "scale", and "rotate"
-  animation: "slide",
-  /* shows/hides controls
+      Spotlight.show(myGallery, {
+        // "fade", "slide", "scale", and "rotate"
+        animation: "slide",
+        /* shows/hides controls
     "theme",
     "fullscreen",
     "autofit",
@@ -362,34 +386,40 @@
     "description",
     "player"
   */
-  control: ["autofit", "zoom","player","fullscreen", "zoom-in","zoom-out"],
-  // auto hides the controls
-  autohide: true,
-  // shows fullscreen toggle button
-  fullscreen: true,
-  // shows zoom buttons
-  zoom: true,
-  // shows zoomIn button
-  zoomin: true,
-  // shows zoomOut button
-  zoomout: true,
-  // shows reset button
-  reset: true,
-  // shows autoplay button
-  player: true,
-  // infinite mode
-  infinite: true,
-  // "white" or "dark"
-  theme: "dark",
-  // shows pages
-  page: true,
-  // shows image preloader
-  preloader: true,
-  // enables image prefetching
-  prefetch: true
-});
+        control: [
+          "autofit",
+          "zoom",
+          "player",
+          "fullscreen",
+          "zoom-in",
+          "zoom-out",
+        ],
+        // auto hides the controls
+        autohide: true,
+        // shows fullscreen toggle button
+        fullscreen: true,
+        // shows zoom buttons
+        zoom: true,
+        // shows zoomIn button
+        zoomin: true,
+        // shows zoomOut button
+        zoomout: true,
+        // shows reset button
+        reset: true,
+        // shows autoplay button
+        player: true,
+        // infinite mode
+        infinite: true,
+        // "white" or "dark"
+        theme: "dark",
+        // shows pages
+        page: true,
+        // shows image preloader
+        preloader: true,
+        // enables image prefetching
+        prefetch: true,
+      });
     </script>
-
 
     <script>
       //  Header script
@@ -432,19 +462,14 @@
     </script>
 
     <script>
-      var elem = document.querySelector(".grid");
-      var msnry = new Masonry(elem, {
-        // options
-        itemSelector: ".grid-item",
-        columnWidth: 400,
-      });
-
-      // element argument can be a selector string
-      //   for an individual element
-      var msnry = new Masonry(".grid", {
-        // options
-      });
+     $('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  gutter: '.gutter-sizer',
+  percentPosition: true,
+})
     </script>
- 
   </body>
 </html>
